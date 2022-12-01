@@ -2,8 +2,9 @@
   <% if (page.total > 1){ %>
   <nav id="page-nav">
     <%- paginator({
-      prev_text: "&laquo; " + __('prev'),
-      next_text: __('next') + " &raquo;"
+      prev_text: '<i class="fa fa-angle-left"></i> ' + __('prev'),
+      next_text: __('next') + ' <i class="fa fa-angle-right"></i>',
+      escape: false
     }) %>
   </nav>
 <% } %>
